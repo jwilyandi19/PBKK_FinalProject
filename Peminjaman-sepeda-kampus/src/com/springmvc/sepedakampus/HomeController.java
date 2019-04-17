@@ -14,25 +14,14 @@ public class HomeController {
 		return "index";
 	}
 	
-	@RequestMapping("/form")
-	public String form() {
-		return "form";
+	@RequestMapping("/login")
+	public String login() {
+		return "login";
 	}
 	
-	@RequestMapping("/display")
-	public String display(HttpServletRequest request, Model model) {
-		
-		String nama = request.getParameter("nama");
-		String ttl = request.getParameter("ttl");
-		String jenis_kelamin = request.getParameter("jenis_kelamin");
-		String alamat = request.getParameter("alamat");
-		
-		model.addAttribute("nama", nama);
-		model.addAttribute("ttl", ttl);
-		model.addAttribute("jenis_kelamin", jenis_kelamin);
-		model.addAttribute("alamat", alamat);
-
-		
-		return "display";
+	@RequestMapping("/register")
+	public String register() {
+		return "register";
 	}
+	
 }
