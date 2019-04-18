@@ -12,10 +12,12 @@ Final Project Pemrograman Berbasis Kerangka Kerja dengan menggunakan Framework S
 
 ### Deskripsi
 Aplikasi ini bertujuan membantu informasi ketersediaan sepeda pada setiap pos dan lokasi pos sepeda di ITS. Fitur-fitur yang ada dalam SIP-BIKE ITS adalah sebagai berikut:
-- Scan barcode
+- Scan code sepeda untuk menampilkan form peminjaman
 - Form peminjaman untuk mencatat data peminjaman sepeda
 - Notifikasi pengembalian untuk memberi tahu bahwa sepeda telah dikembalikan
 - Form pengembalian untuk mencatat data pengembalian sepeda
+- Denah lokasi pos peminjaman
+- Informasi ketersediaan disetiap pos
 
 ### Usecase Diagram 
 ![Capture](https://github.com/jwilyandi19/PBKK_FinalProject/blob/master/ScreenShot/Usecase.jpg)
