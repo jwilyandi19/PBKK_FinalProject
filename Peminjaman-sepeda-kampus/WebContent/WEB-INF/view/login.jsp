@@ -9,13 +9,13 @@
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Login</title>
-	<link href="<c:url value="/resources/css/LoginPage/style.css" />" rel="stylesheet">
+	<link href="<c:url value="/resources/css/Login/style.css" />" rel="stylesheet">
 </head>
 <body>
 	<div class="login-box">
-    	<img alt="logo-spring" class="avatar" src="<c:url value="/resources/img/LoginPage/avatar.png"/> ">
+    	<img alt="logo-spring" class="avatar" src="<c:url value="/resources/img/Login/avatar.png"/> ">
         <h1>ITS Cycle</h1>
-            <form action = "display" method = "post">
+            <form action = "homepage" method = "post">
             	<p>Username</p>
             	<input required="" type="text" name="username" placeholder="Enter Username">
             	<p>Password</p>

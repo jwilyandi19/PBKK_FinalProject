@@ -8,12 +8,12 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title>Login</title>
-	<link href="<c:url value="/resources/css/LoginPage/style2.css" />" rel="stylesheet">
+	<title>Register</title>
+	<link href="<c:url value="/resources/css/Login/style2.css" />" rel="stylesheet">
 </head>
 <body>
 	<div class="login-box">
-    	<img alt="logo-spring" class="avatar" src="<c:url value="/resources/img/LoginPage/avatar.png"/> ">
+    	<img alt="logo-spring" class="avatar" src="<c:url value="/resources/img/Login/avatar.png"/> ">
         <h1>ITS Cycle</h1>
         	<form action = "login" method = "post">
             	<p>NRP</p>

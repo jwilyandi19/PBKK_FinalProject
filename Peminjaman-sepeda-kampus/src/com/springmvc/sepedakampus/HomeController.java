@@ -24,4 +24,9 @@ public class HomeController {
 		return "register";
 	}
 	
+	@RequestMapping("/homepage")
+	public String homepage() {
+		return "homepage";
+	}
+	
 }
