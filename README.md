@@ -18,14 +18,14 @@ Aplikasi ini bertujuan membantu informasi ketersediaan sepeda pada setiap pos da
 - Form pengembalian untuk mencatat data pengembalian sepeda
 
 ### Usecase Diagram 
-![Capture](https://github.com/jwilyandi19/PBKK_FinalProject/tree/master/ScreenShot/Usecase.jpg)
+![Capture](https://github.com/jwilyandi19/PBKK_FinalProject/blob/master/ScreenShot/Usecase.jpg)
 
 ### SiteMap
-![Capture](https://github.com/jwilyandi19/PBKK_FinalProject/tree/master/readme/SiteMap.png)
+![Capture](https://github.com/jwilyandi19/PBKK_FinalProject/blob/master/readme/SiteMap.png)
 
 ### Mockup
-![Capture](https://github.com/jwilyandi19/PBKK_FinalProject/tree/master/ScreenShot/login.png)
-![Capture](https://github.com/jwilyandi19/PBKK_FinalProject/tree/master/ScreenShot/home-denah.png)
-![Capture](https://github.com/jwilyandi19/PBKK_FinalProject/tree/master/ScreenShot/home-tentang.png)
-![Capture](https://github.com/jwilyandi19/PBKK_FinalProject/tree/master/ScreenShot/register.png)
+![Capture](https://github.com/jwilyandi19/PBKK_FinalProject/blob/master/ScreenShot/login.png)
+![Capture](https://github.com/jwilyandi19/PBKK_FinalProject/blob/master/ScreenShot/home-denah.png)
+![Capture](https://github.com/jwilyandi19/PBKK_FinalProject/blob/master/ScreenShot/home-tentang.png)
+![Capture](https://github.com/jwilyandi19/PBKK_FinalProject/blob/master/ScreenShot/register.png)
 
