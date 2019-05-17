@@ -34,5 +34,14 @@ public class HomeController {
 		return "dashboard";
 	}
 	
+	@RequestMapping("/formpeminjaman")
+	public String formpeminjaman() {
+		return "formpeminjaman";
+	}
+	
+	@RequestMapping("/formpengembalian")
+	public String formpengembalian() {
+		return "formpengembalian";
+	}
 
 }
