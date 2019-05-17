@@ -29,10 +29,16 @@ public class HomeController {
 		return "dashboard";
 	}
 	
-	@RequestMapping("/datapeminjaman")
-	public String data_peminjaman() {
-		return "data-peminjaman";
+
+	@RequestMapping("/formpeminjaman")
+	public String formpeminjaman() {
+		return "formpeminjaman";
 	}
 	
+	@RequestMapping("/formpengembalian")
+	public String formpengembalian() {
+		return "formpengembalian";
+	}
+
 
 }

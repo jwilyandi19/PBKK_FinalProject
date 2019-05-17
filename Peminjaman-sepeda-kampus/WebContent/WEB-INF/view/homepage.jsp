@@ -12,8 +12,8 @@
         <title>ITS CYCLE</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" href="<c:url value="/resources/css/Home/iconfont.css" />" >
+
+        <link rel="stylesheet" href="<c:url value="/resources/css/Home/iconfont.css" />"  >
         <link rel="stylesheet" href="<c:url value="/resources/fonts/stylesheet.css" />" >
         <link rel="stylesheet" href="<c:url value="/resources/css/Home/font-awesome.min.css" />" >
         <link rel="stylesheet" href="<c:url value="/resources/css/Home/jquery.fancybox.css" />" >
@@ -23,12 +23,35 @@
 
         <!--Theme custom css -->
         <link rel="stylesheet" href="<c:url value="/resources/css/Home/style.css" />" >
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="<c:url value="/resources/css/Home/responsive.css" />" >
 
-        <script src="<c:url value="/resources/js/Home/vendor/modernizr-2.8.3-respond-1.4.2.min.js" /> "></script>
+        <script src="<c:url value="/resources/js/Home/vendor/modernizr-2.8.3-respond-1.4.2.min.js" />" ></script>
     </head>
+
+    <style type="text/css">
+        .btn-sm {
+            display: inline-block;
+            line-height: 20px;
+            text-align: center;
+            color: #fff;
+            letter-spacing: 1px;
+            font-size:0.8125rem;
+            margin: 10px;
+            background-color: #ff7200;
+            transition: .5s;
+            border: 1px solid #ff7200;
+            border-radius: 5px;
+            font-family: 'montserratregular';
+
+        }
+
+        .btn-sm:hover{
+            background-color: #ff5000;
+        }
+
+    </style>
     <body data-spy="scroll" data-target=".navbar-collapse">
         
         <div class="culmn">
@@ -56,10 +79,33 @@
 
                                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                                            <ul class="nav navbar-nav navbar-right">
+                                            <ul class="nav navbar-nav navbar-right" >
+                                                
                                                 <li><a href="#home">HOME</a></li>
                                                 <li><a href="#service">TENTANG</a></li>
                                                 <li><a href="#contact">DENAH</a></li>
+                                            <li class="nav-item dropdown no-arrow mx-1" >
+                                              <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fa fa-bell fa-fw"></i>
+                                                <!-- Counter - Alerts -->
+                                                <span class="badge badge-danger badge-counter">3+</span>
+                                              </a>
+                                              <!-- Dropdown - Alerts -->
+                                              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown" style="background: white">
+                                                <h6 class="dropdown-list-header" style="text-align: center;">
+                                                  Alerts Center
+                                                </h6>
+                                                <a class="dropdown-item d-flex align-items-center" href="#" >
+                                                 
+                                                  <div style="padding: 10px">
+                                                    <div class="small text-gray-500" style="font-size: 15px" ><strong>Judul</strong></div>
+                                                    <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                                  </div>
+                                                </a>
+                                       
+                                            </li>
+
+                                            <li><button class="btn-sm" data-toggle="modal" data-target="#logout">Logout</button></li>
                                             </ul>
                                         </div>
 
@@ -84,17 +130,7 @@
                                             <h1>SELAMAT DATANG DI ITS CYCLE</h1>
                                             <p>Website peminjaman sepeda kampus di ITS</p>
                                             <div class="home_btn">
-                                                <a href="" class="btn btn-primary">PINJAM SEKARANG</a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                    <div class="single_home_slider">
-                                        <div class="main_home wow fadeInUp" data-wow-duration="700ms">
-                                            <h1>WELCOME TO ITS CYCLE</h1>
-                                            <p>ITS's bicycle lending website</p>
-                                            <div class="home_btn">
-                                                <a href="" class="btn btn-primary">RENT NOW</a>
+                                                <a href="#" data-toggle="modal" data-target="#peminjaman" class="btn btn-primary">PINJAM SEKARANG</a>
                                             </div>
 
                                         </div>
@@ -134,7 +170,7 @@
 
                                                         <div class="col-sm-6">
                                                             <div class="single_tab_img">
-                                                              <img src="<c:url value="/resources/img/Home/stab1.png"/> " alt="">
+                                                              <img src="<c:url value="/resources/img/Home/stab1.png"/> " alt=""> 
                                                             </div>
                                                         </div>
                                                     </div>
@@ -196,7 +232,68 @@
             </section>  <!-- End of contact section -->
 
 
+            <div class="modal fade" id="peminjaman">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">PEMINJAMAN</h4>
+                            
+                           
+
+                        </div>
+                        
+                        <!-- Modal body -->
+                        <div class="modal-body" style="padding:1rem">
+                        <form action="formpeminjaman" method="post">
+                           <label>ID SEPEDA</label>
+                           <input class="form-control" type="text" name="id_sepeda">
+                        </div>
+                        <!-- Modal footer -->
+                        <div>                  
+                                <div class="row" align="center" >
+                                    <button type="button" data-dismiss="modal"  class="btn-sm" style="background-color: grey  ">BATAL</button>
+                                    <button type="submit" id="btn-reject" name="submit" style="" class="btn-sm">LANJUT</button>
+                               </div>
+                        </div> 
+                        </form>                                                   
+                    </div>
+                </div>
+            </div>
+
+
+             <div class="modal fade" id="logout">
+                <div class="modal-dialog modal-dialog-centered " >
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">LOGOUT</h4>
+
+                        <!-- Modal body -->
+                        <c:url value="/" var="root"/> 
+                        <form action="${root}" method="post">
+                            <div class="modal-body" style="padding:1rem">
+                                <div>
+                                    <p style="font-size: 20px">Apakah anda yakin ingin keluar ?</p>
+                                </div>
+                            <!-- Modal footer -->
+                            </div>
+                            <div class="modal-footer"></div>
+                                <div class="row" align="center" >
+                                        <button type="button" data-dismiss="modal"  class="btn-sm" style="background-color: grey  ">BATAL</button>
+                                        <button type="submit" id="btn-reject" name="submit" style="" class="btn-sm">Lanjut </button>
+                                </div>
+                            
+                            </div>
+                        </form>                                            
+                    </div>
+                </div>
+            </div>
         <!-- START SCROLL TO TOP  -->
+
+   
 
         <div class="scrollup">
             <a href="#"><i class="fa fa-chevron-up"></i></a>
@@ -214,3 +311,4 @@
 
     </body>
 </html>
+
