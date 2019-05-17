@@ -45,51 +45,7 @@ jQuery(document).ready(function ($) {
     /* ---------------------------------------------------------------------
      Carousel
      ---------------------------------------------------------------------= */
-
-    $('.main_home_slider').owlCarousel({
-        responsiveClass: true,
-        autoplay: false,
-        items: 1,
-        loop: true,
-        dots: true,
-        nav: false,
-        navText: [
-            "<i class='lnr lnr-chevron-left'></i>",
-            "<i class='lnr lnr-chevron-right'></i>"
-        ],
-        autoplayHoverPause: true
-
-    });
-
-    $('.single_features_slide').owlCarousel({
-        responsiveClass: true,
-        autoplay: false,
-        items: 1,
-        loop: true,
-        dots: true,
-        nav: false,
-        navText: [
-            "<i class='lnr lnr-chevron-left'></i>",
-            "<i class='lnr lnr-chevron-right'></i>"
-        ],
-        autoplayHoverPause: true
-
-    });
-    $('.main_teastimonial_slider').owlCarousel({
-        responsiveClass: true,
-        autoplay: false,
-        items: 1,
-        loop: true,
-        dots: true,
-        nav: false,
-        navText: [
-            "<i class='lnr lnr-chevron-left'></i>",
-            "<i class='lnr lnr-chevron-right'></i>"
-        ],
-        autoplayHoverPause: true
-
-    });
-
+=
 //fancybox
     $(".youtube-media").on("click", function (e) {
         var jWindow = $(window).width();
@@ -224,9 +180,9 @@ jQuery(document).ready(function ($) {
 
 $(document).on("scroll", function () {
     if ($(document).scrollTop() > 120) {
-        $("nav").addClass("small");
+        $("nav").addClass("navbar-light");
     } else {
-        $("nav").removeClass("small");
+        $("nav").removeClass("navbar-short");
     }
 });
 

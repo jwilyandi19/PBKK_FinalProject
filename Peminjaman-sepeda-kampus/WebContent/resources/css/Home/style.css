@@ -630,6 +630,10 @@ input::-ms-input-placeholder {
         
 }
 
+.home .main_home h3{
+    color: #fff;
+    margin-bottom:20px;
+}
 
 
 .home .owl-theme .owl-nav {
