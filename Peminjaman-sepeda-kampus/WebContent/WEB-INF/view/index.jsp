@@ -7,58 +7,57 @@
 <html lang="en">
 
 <head>
-<style type="text/css"  >
+<style type="text/css" >
   body{
     background: url(<c:url value="/resources/img/Home/homebg.jpg"/>) no-repeat;
     background-size: cover;
     z-index: -1;
   
   } 
-  
 
-.main-section {
-  margin: 0 auto;
-  margin-top: 130px;
-  padding: 0;
-}
-.modal-content {
-  background-color: #434e5a;
-  opacity: .85;
-  padding: 0 18px;
-  border-radius: 10px;
-  float: right;
-}
-.user-img img {
-  height: 200px;
-  width: 200px;
-}
-.user-img {
-  margin-top:-100px;
-}
-
-.btn-success {
-  background-color: #1c6288;
-  font-size: 19px;
-  border-radius: 5px;
-  padding: 7px 14px;
-  border: 1px solid #daf1ff;
-}
-.btn-success:hover {
-  background-color: #13445e;
-  border: 1px solid #daf1ff;
-}
-
-.form-group input{
-  opacity: 1;
-}
-
-.forgot {
-  padding: 5px 0 25px;
-}
-.forgot a {
-  color: blue;
-  opacity: 1;
-}
+	.main-section {
+	  margin: 0 auto;
+	  margin-top: 130px;
+	  padding: 0;
+	}
+	.modal-content {
+	  background-color: #434e5a;
+	  opacity: .85;
+	  padding: 0 18px;
+	  border-radius: 10px;
+	  float: right;
+	}
+	.user-img img {
+	  height: 200px;
+	  width: 200px;
+	}
+	.user-img {
+	  margin-top:-100px;
+	}
+	
+	.btn-success {
+	  background-color: #1c6288;
+	  font-size: 19px;
+	  border-radius: 5px;
+	  padding: 7px 14px;
+	  border: 1px solid #daf1ff;
+	}
+	.btn-success:hover {
+	  background-color: #13445e;
+	  border: 1px solid #daf1ff;
+	}
+	
+	.form-group input{
+	  opacity: 1;
+	}
+	
+	.forgot {
+	  padding: 5px 0 25px;
+	}
+	.forgot a {
+	  color: blue;
+	  opacity: 1;
+	}
 
 </style>
 
@@ -81,7 +80,7 @@
 </head>
 
 <body>
-
+	
   <div class="container">
 
     <!-- Outer Row -->

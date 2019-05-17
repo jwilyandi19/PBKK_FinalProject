@@ -45,7 +45,7 @@ jQuery(document).ready(function ($) {
     /* ---------------------------------------------------------------------
      Carousel
      ---------------------------------------------------------------------= */
-=
+
 //fancybox
     $(".youtube-media").on("click", function (e) {
         var jWindow = $(window).width();

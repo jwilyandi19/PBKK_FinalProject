@@ -11,14 +11,9 @@ public class HomeController {
 	
 	@RequestMapping("/")
 	public String showMyPage() {
-		return "index";
+		return "dashboard";
 	}
 	
-//	@RequestMapping("/login")
-//	public String login() {
-//		return "login";
-//	}
-//	
 	@RequestMapping("/register")
 	public String register() {
 		return "register";
@@ -32,6 +27,11 @@ public class HomeController {
 	@RequestMapping("/dashboard")
 	public String dashboard() {
 		return "dashboard";
+	}
+	
+	@RequestMapping("/datapeminjaman")
+	public String data_peminjaman() {
+		return "data-peminjaman";
 	}
 	
 
