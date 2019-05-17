@@ -29,7 +29,6 @@ public class HomeController {
 		return "dashboard";
 	}
 	
-
 	@RequestMapping("/formpeminjaman")
 	public String formpeminjaman() {
 		return "formpeminjaman";
@@ -39,6 +38,27 @@ public class HomeController {
 	public String formpengembalian() {
 		return "formpengembalian";
 	}
-
+	
+	@RequestMapping("/datapeminjaman")
+	public String datapeminjaman() {
+		return "data-peminjaman";
+	}
+	
+	@RequestMapping("/notifikasi")
+	public String notifikasi() {
+		return "notifikasi";
+	}
+	
+	
+	@RequestMapping("/managecycle")
+	public String managecycle() {
+		return "manage-cycle";
+	}
+	
+	@RequestMapping("/manageuser")
+	public String manageuser() {
+		return "manage-user";
+	}
+	
 
 }

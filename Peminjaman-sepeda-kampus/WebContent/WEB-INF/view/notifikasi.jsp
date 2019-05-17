@@ -1,17 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-<?php require_once 'header.php' ?>
-
+<%@ include file="header.jsp" %>
 </head>
 
 <body id="page-top">  <!-- Page Wrapper -->
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <?php require_once 'navbar.php' ?>
+    <%@ include file="navbar.jsp" %>
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
@@ -193,7 +192,7 @@
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel">HAPUS</h5>
               <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">×</span>
+                <span aria-hidden="true">�</span>
               </button>
             </div>
             <div class="modal-body">Apakah anda yakin menghapus catatan ini?</div>
@@ -206,6 +205,6 @@
       </div>
 
 <footer>
-  <?php require_once 'footer.php'  ?> 
+<%@ include file="footer.jsp" %>
 </footer>
 </html>

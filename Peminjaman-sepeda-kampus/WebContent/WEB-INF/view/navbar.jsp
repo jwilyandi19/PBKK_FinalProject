@@ -3,7 +3,7 @@
  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="../index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard">
         <div class="sidebar-brand-icon rotate-n-15">
           <img src="<c:url value="/resources/img/Home/stab1.png"/>"	style="height: 70px; width: 70px">
         </div>
@@ -15,32 +15,32 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="dashboard.php">
+        <a class="nav-link" href="dashboard">
           <i class="fas fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
       <hr class="sidebar-divider my-0">
 
       <li class="nav-item active">
-        <a class="nav-link" href="data-peminjaman.php">
+        <a class="nav-link" href="datapeminjaman">
           <i class="fas fa-database"></i>
           <span>Data Peminjaman </span></a>
       </li>
       <!-- Nav Item - Tables -->
       <li class="nav-item active">
-        <a class="nav-link" href="manage-user.php">
+        <a class="nav-link" href="manageuser">
           <i class="fas fa-users-cog"></i>
           <span>Manajemen Pengguna</span></a>
       </li>
 
       
       <li class="nav-item active">
-        <a class="nav-link" href="manage-cycle.php">
+        <a class="nav-link" href="managecycle">
           <i class="fas fa-bicycle"></i>
           <span>Manajemen Sepeda</span></a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="Notifikasi.php">
+        <a class="nav-link" href="notifikasi">
         <i class="fas fa-bell"></i>
           <span>Notifikasi</span></a>
       </li>

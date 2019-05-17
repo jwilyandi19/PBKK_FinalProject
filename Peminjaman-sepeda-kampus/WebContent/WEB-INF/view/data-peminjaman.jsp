@@ -1,9 +1,9 @@
-ï»¿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-<?php require_once 'header.php' ?>
+<%@ include file="header.jsp" %>
 
 </head>
 
@@ -11,7 +11,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <?php require_once 'navbar.php' ?>
+    <%@ include file="navbar.jsp" %>
     <!-- End of Sidebar -->
 
     <!-- Content Wrapper -->
@@ -265,7 +265,7 @@
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-exclamation-circle" style="color: red"> </i>Perhatian</h5>
               <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">Ã—</span>
+                <span aria-hidden="true">×</span>
               </button>
             </div>
             <div class="modal-body">Apakah anda yakin menghapus data peminjaman ini?</div>
@@ -283,7 +283,7 @@
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-check-circle" style="color: blue"></i></i>Konfirmasi Peminjaman</h5>
               <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">Ã—</span>
+                <span aria-hidden="true">×</span>
               </button>
             </div>
             <div class="modal-body">Apakah peminjam mengetahui peminjaman ini?</div>
@@ -301,7 +301,7 @@
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-check-circle" style="color: blue"></i>Konfirmasi Pengembalian</h5>
               <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">Ã—</span>
+                <span aria-hidden="true">×</span>
               </button>
             </div>
             <div class="modal-body">Apakah sepeda telah anda terima di POS?</div>
@@ -313,6 +313,6 @@
         </div>
       </div>
 <footer>
-  <?php require_once 'footer.php'  ?> 
+ <%@ include file="footer.jsp" %>
 </footer>
 </html>
