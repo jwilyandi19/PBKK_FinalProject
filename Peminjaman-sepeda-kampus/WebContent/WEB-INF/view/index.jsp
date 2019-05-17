@@ -117,6 +117,19 @@
     </div>
   </div>
 
+  <div style="padding-top:10rem;  opacity:1" class="modal fade" id="penggunabaru" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Belum Punya Akun?</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">Silahkan ke pos peminjaman sepeda terdekat. Pendaftaran dilakukan oleh petugas yang berjaga di POS</div>
+
+      </div>
+    </div>
 
   </div>
 

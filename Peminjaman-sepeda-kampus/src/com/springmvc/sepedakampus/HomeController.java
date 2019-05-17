@@ -11,7 +11,7 @@ public class HomeController {
 	
 	@RequestMapping("/")
 	public String showMyPage() {
-		return "dashboard";
+		return "index";
 	}
 	
 	@RequestMapping("/register")
