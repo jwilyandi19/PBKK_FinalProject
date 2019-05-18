@@ -13,14 +13,14 @@ public class Pos {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id_pos")
+	@Column(name="id")
 	private int id;
 	
 	@Column(name="nama_pos")
 	private String namaPos;
 	
 	@Column(name="ktrsdian_pos")
-	private int ktrsdianPos;
+	private String ktrsdianPos;
 	
 	public Pos() {
 		
@@ -42,11 +42,16 @@ public class Pos {
 		this.namaPos = namaPos;
 	}
 	
-	public int getKtrsidanPos() {
+	public String getKtrsdianPos() {
 		return ktrsdianPos;
 	}
 	
-	public void setKtrsdianPos(int ktrsdianPos) {
+	public void setKtrsdianPos(String ktrsdianPos) {
 		this.ktrsdianPos = ktrsdianPos;
+	}
+	
+	@Override
+	public String toString() {
+		return "Pos [id=" + id + ", namaPos=" + namaPos + ", ktrsdianPos=" + ktrsdianPos + "]";
 	}
 }
