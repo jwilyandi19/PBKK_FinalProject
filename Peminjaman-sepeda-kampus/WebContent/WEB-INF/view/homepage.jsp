@@ -192,30 +192,16 @@
                                             </div>
                                             <div class="row">
                                                 <div class="contact_info_content">
-                                                    <div class="col-sm-12">
-                                                        <div class="single_contact_info">
-                                                            <div class="single_info_text">
-                                                                <h3>POS 1</h3>
-                                                                <p>Ketersedian Sepeda : none</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-12">
-                                                        <div class="single_contact_info">
-                                                            <div class="single_info_text">
-                                                               <h3>POS 2</h3>
-                                                                <p>Ketersedian Sepeda : none</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-12">
-                                                        <div class="single_contact_info">
-                                                            <div class="single_info_text">
-                                                                <h3>POS 3</h3>
-                                                                <p>Ketersedian Sepeda : none</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                	<c:forEach var="pos" items="${poss}">
+                                                		<div class="col-sm-12">
+	                                                        <div class="single_contact_info">
+	                                                            <div class="single_info_text">
+	                                                                <h3>${pos.namaPos}</h3>
+	                                                                <p>Ketersediaan Sepeda: ${pos.ktrsdianPos}</p>
+	                                                            </div>
+	                                                        </div>
+	                                                    </div>
+	                                                 </c:forEach>
                                                 </div>
                                             </div>
                                         </div>
