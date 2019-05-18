@@ -32,7 +32,6 @@ public class HomeController {
 	public String homepage(Model myModel) {
 		List <Pos> thePoss = posDAO.getPoss();
 		myModel.addAttribute("poss", thePoss);
-		
 		return "homepage";
 	}
 	
