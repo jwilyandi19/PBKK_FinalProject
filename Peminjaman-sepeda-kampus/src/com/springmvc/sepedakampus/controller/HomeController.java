@@ -31,8 +31,6 @@ public class HomeController {
 	@RequestMapping("/homepage")
 	public String homepage(Model myModel) {
 		List <Pos> thePoss = posDAO.getPoss();
-		System.out.println("TESZ");
-		System.out.println(thePoss.get(0));
 		myModel.addAttribute("poss", thePoss);
 		
 		return "homepage";

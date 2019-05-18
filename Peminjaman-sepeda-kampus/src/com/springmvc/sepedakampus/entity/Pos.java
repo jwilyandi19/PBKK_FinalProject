@@ -20,7 +20,7 @@ public class Pos {
 	private String namaPos;
 	
 	@Column(name="ktrsdian_pos")
-	private String ktrsdianPos;
+	private int ktrsdianPos;
 	
 	public Pos() {
 		
@@ -42,11 +42,11 @@ public class Pos {
 		this.namaPos = namaPos;
 	}
 	
-	public String getKtrsdianPos() {
+	public int getKtrsdianPos() {
 		return ktrsdianPos;
 	}
 	
-	public void setKtrsdianPos(String ktrsdianPos) {
+	public void setKtrsdianPos(int ktrsdianPos) {
 		this.ktrsdianPos = ktrsdianPos;
 	}
 	

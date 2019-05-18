@@ -21,13 +21,10 @@ public class PosDAOImpl implements PosDAO {
 	public List<Pos> getPoss() {
 		// get the current hibernate session
 		Session currentSession = sessionFactory.getCurrentSession();
-		System.out.println("Pertama");
 		// create a query
 		Query<Pos> theQuery = 
 				currentSession.createQuery("from Pos", Pos.class);
-		System.out.println("Masuk");
 		List<Pos> poss = theQuery.getResultList();
-		System.out.println("Another tes");
 		return poss;
 				
 	}
