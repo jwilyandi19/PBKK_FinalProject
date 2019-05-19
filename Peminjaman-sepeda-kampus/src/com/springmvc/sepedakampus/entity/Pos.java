@@ -21,7 +21,7 @@ public class Pos {
 	private String lokasi;
 
 	@Column(name = "is_active")
-	private int isActive;
+	private int  isActive;
 
 	@Column(name = "jumlah_sepeda")
 	private int jumlahSepeda;
@@ -56,6 +56,10 @@ public class Pos {
 
 	public int setJumlahSepeda() {
 		return jumlahSepeda;
+	}
+	
+	public void getJumlahSepeda(int jumlahSepeda) {
+		this.jumlahSepeda =  jumlahSepeda;
 	}
 
 }

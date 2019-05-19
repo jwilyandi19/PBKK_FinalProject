@@ -67,7 +67,7 @@ CREATE TABLE `peminjaman` (
   `tanggal_meminjam` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `tanggal_mengembalikan` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `keterangan` varchar(128) NOT NULL,
-  `status` binary(1) NOT NULL
+  `status` boolean NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -94,7 +94,7 @@ CREATE TABLE `petugas` (
 CREATE TABLE `pos` (
   `id_pos` int(11) NOT NULL,
   `lokasi` varchar(30) NOT NULL,
-  `is_active` binary(1) NOT NULL,
+  `is_active` boolean NOT NULL,
   `jumlah_sepeda` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -118,7 +118,7 @@ CREATE TABLE `sepeda` (
   `id_pos` int(11) NOT NULL,
   `model` varchar(30) NOT NULL,
   `tanggal_beli` date NOT NULL,
-  `is_available` binary(1) NOT NULL
+  `is_available` boolean NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -221,6 +221,12 @@ ALTER TABLE `petugas`
 ALTER TABLE `sepeda`
   ADD CONSTRAINT `sepeda_ibfk_1` FOREIGN KEY (`id_pos`) REFERENCES `pos` (`id_pos`);
 COMMIT;
+
+
+INSERT INTO `pos` ( `lokasi`, `is_active`, `jumlah_sepeda`) VALUES
+( 'Pintu Utama', true, 25),
+( 'Asrama', true, 30),
+( 'Pintu Sakinah', true, 25);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
