@@ -8,50 +8,53 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="pos")
+@Table(name = "pos")
 public class Pos {
-	
+
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="id")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id_pos")
 	private int id;
-	
-	@Column(name="nama_pos")
-	private String namaPos;
-	
-	@Column(name="ktrsdian_pos")
-	private int ktrsdianPos;
-	
+
+	@Column(name = "lokasi")
+	private String lokasi;
+
+	@Column(name = "is_active")
+	private boolean isActive;
+
+	@Column(name = "jumlah_sepeda")
+	private int jumlahSepeda;
+
 	public Pos() {
-		
+
 	}
-	
+
 	public int getId() {
 		return id;
 	}
-	
+
 	public void setId(int id) {
 		this.id = id;
 	}
-	
-	public String getNamaPos() {
-		return namaPos;
+
+	public String lokasi() {
+		return lokasi;
 	}
-	
-	public void setNamaPos(String namaPos) {
-		this.namaPos = namaPos;
+
+	public void getLokasi(String lokasi) {
+		this.lokasi = lokasi;
 	}
-	
-	public int getKtrsdianPos() {
-		return ktrsdianPos;
+
+	public boolean setIsActive() {
+		return isActive;
 	}
-	
-	public void setKtrsdianPos(int ktrsdianPos) {
-		this.ktrsdianPos = ktrsdianPos;
+
+	public void getIsActive(boolean isActive) {
+		this.isActive = isActive;
 	}
-	
-	@Override
-	public String toString() {
-		return "Pos [id=" + id + ", namaPos=" + namaPos + ", ktrsdianPos=" + ktrsdianPos + "]";
+
+	public int setJumlahSepeda() {
+		return jumlahSepeda;
 	}
+
 }
