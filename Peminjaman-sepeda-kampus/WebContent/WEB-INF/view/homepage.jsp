@@ -54,7 +54,7 @@
     </style>
     <body data-spy="scroll" data-target=".navbar-collapse">
         
-        <div class="culmn">
+        <div class="column">
             <header id="main_menu" class="header navbar-fixed-top">            
                 <div class="main_menu_bg">
                     <div class="container">
@@ -196,8 +196,10 @@
                                                 		<div class="col-sm-12">
 	                                                        <div class="single_contact_info">
 	                                                            <div class="single_info_text">
-	                                                                <h3>${pos.lokasi}</h3>
-	                                                                <p>Ketersediaan Sepeda: ${pos.jumlahSepeda}</p>
+	                                                              
+	                                                             
+	                                                               <%--  <h3>${pos.lokasi}</h3>
+	                                                                <p>Ketersediaan Sepeda: ${pos.jumlahSepeda}</p> --%>
 	                                                            </div>
 	                                                        </div>
 	                                                    </div>

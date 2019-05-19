@@ -8,11 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
+
 @Table(name = "pos")
 public class Pos {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+
 	@Column(name = "id_pos")
 	private int id;
 
@@ -20,7 +21,7 @@ public class Pos {
 	private String lokasi;
 
 	@Column(name = "is_active")
-	private boolean isActive;
+	private int isActive;
 
 	@Column(name = "jumlah_sepeda")
 	private int jumlahSepeda;
@@ -45,11 +46,11 @@ public class Pos {
 		this.lokasi = lokasi;
 	}
 
-	public boolean setIsActive() {
+	public int setIsActive() {
 		return isActive;
 	}
 
-	public void getIsActive(boolean isActive) {
+	public void getIsActive(int isActive) {
 		this.isActive = isActive;
 	}
 

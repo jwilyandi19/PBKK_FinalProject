@@ -21,8 +21,8 @@ public class TestDbServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		// setup connection variables
-		String user = "springpbkk";
-		String pass = "springpbkk";
+		String user = "root";
+		String pass = "";
 		
 		String jdbcUrl = "jdbc:mysql://localhost:3306/sepeda_kampus_its?useSSL=false&serverTimezone=UTC";
 		String driver = "com.mysql.cj.jdbc.Driver";
