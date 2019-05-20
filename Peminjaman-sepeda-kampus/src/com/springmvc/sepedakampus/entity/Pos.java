@@ -21,7 +21,7 @@ public class Pos {
 	private String lokasi;
 
 	@Column(name = "is_active")
-	private int isActive;
+	private int  isActive;
 
 	@Column(name = "jumlah_sepeda")
 	private int jumlahSepeda;
@@ -38,24 +38,28 @@ public class Pos {
 		this.id = id;
 	}
 
-	public String lokasi() {
+	public String getLokasi() {
 		return lokasi;
 	}
 
-	public void getLokasi(String lokasi) {
+	public void setLokasi(String lokasi) {
 		this.lokasi = lokasi;
 	}
 
-	public int setIsActive() {
+	public int getIsActive() {
 		return isActive;
 	}
 
-	public void getIsActive(int isActive) {
+	public void setIsActive(int isActive) {
 		this.isActive = isActive;
 	}
 
-	public int setJumlahSepeda() {
+	public int getJumlahSepeda() {
 		return jumlahSepeda;
+	}
+	
+	public void setJumlahSepeda(int jumlahSepeda) {
+		this.jumlahSepeda =  jumlahSepeda;
 	}
 
 }

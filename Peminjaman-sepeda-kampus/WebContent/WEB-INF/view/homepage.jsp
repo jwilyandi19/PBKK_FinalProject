@@ -196,10 +196,9 @@
                                                 		<div class="col-sm-12">
 	                                                        <div class="single_contact_info">
 	                                                            <div class="single_info_text">
-	                                                              
 	                                                             
-	                                                               <%--  <h3>${pos.lokasi}</h3>
-	                                                                <p>Ketersediaan Sepeda: ${pos.jumlahSepeda}</p> --%>
+	                                                              <h3>${pos.lokasi}</h3>
+	                                                                <p>Ketersediaan Sepeda: ${pos.jumlahSepeda}</p>
 	                                                            </div>
 	                                                        </div>
 	                                                    </div>
