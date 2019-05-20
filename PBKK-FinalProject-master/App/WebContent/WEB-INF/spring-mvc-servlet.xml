@@ -15,7 +15,7 @@
 		http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 	<!-- Step 3: Add support for component scanning -->
-	<context:component-scan base-package="id.kel8.catdogdaycare" />
+	<context:component-scan base-package="com.sepedakampus" />
 
 	<!-- Step 4: Add support for conversion, formatting and validation support -->
 	<mvc:annotation-driven/>
@@ -33,7 +33,7 @@
 	<!-- Step 6: Hibernate configuration -->
 	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
         <property name="driverClass" value="com.mysql.cj.jdbc.Driver" />
-        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/datadaycare?useSSL=false&amp;serverTimezone=UTC" />
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/sepeda_kampus_its?useSSL=false&amp;serverTimezone=UTC" />
         <property name="user" value="root" />
         <property name="password" value="" /> 
 
@@ -48,7 +48,7 @@
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
 		<property name="dataSource" ref="myDataSource" />
-		<property name="packagesToScan" value="id.kel8.catdogdaycare.model" />
+		<property name="packagesToScan" value="com.sepedakampus.model" />
 		<property name="hibernateProperties">
 		   <props>
 		      <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
