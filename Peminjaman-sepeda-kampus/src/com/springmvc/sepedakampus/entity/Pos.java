@@ -1,10 +1,13 @@
 package com.springmvc.sepedakampus.entity;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -13,7 +16,7 @@ import javax.persistence.Table;
 public class Pos {
 
 	@Id
-
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_pos")
 	private int id;
 
@@ -21,14 +24,19 @@ public class Pos {
 	private String lokasi;
 
 	@Column(name = "is_active")
-	private int  isActive;
+	private int isActive;
 
 	@Column(name = "jumlah_sepeda")
 	private int jumlahSepeda;
 
-	public Pos() {
+	@OneToMany(mappedBy = "petugas")
+	private List<Petugas> petugas;
 
-	}
+	@OneToMany(mappedBy = "sepeda")
+	private List<Sepeda> sepedas;
+
+	@OneToMany(mappedBy = "peminjaman")
+	private List<Peminjaman> peminjamans;
 
 	public int getId() {
 		return id;
@@ -57,9 +65,33 @@ public class Pos {
 	public int getJumlahSepeda() {
 		return jumlahSepeda;
 	}
-	
+
 	public void setJumlahSepeda(int jumlahSepeda) {
-		this.jumlahSepeda =  jumlahSepeda;
+		this.jumlahSepeda = jumlahSepeda;
+	}
+
+	public List<Petugas> getPetugas() {
+		return petugas;
+	}
+
+	public void setPetugas(List<Petugas> petugas) {
+		this.petugas = petugas;
+	}
+
+	public List<Sepeda> getSepedas() {
+		return sepedas;
+	}
+
+	public void setSepedas(List<Sepeda> sepedas) {
+		this.sepedas = sepedas;
+	}
+
+	public List<Peminjaman> getPeminjamans() {
+		return peminjamans;
+	}
+
+	public void setPeminjamans(List<Peminjaman> peminjamans) {
+		this.peminjamans = peminjamans;
 	}
 
 }
