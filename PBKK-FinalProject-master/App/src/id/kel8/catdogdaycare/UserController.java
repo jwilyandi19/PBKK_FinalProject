@@ -38,6 +38,8 @@ public class UserController {
 		return "redirect:/user-home";
 	}
 	
+	
+	
 	@GetMapping("/user-home")
 	public String userHome(Model model, HttpSession httpSession) {
 		User user = (User) httpSession.getAttribute("user");

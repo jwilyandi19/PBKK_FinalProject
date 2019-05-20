@@ -99,42 +99,22 @@
           <p>Sistem Informasi Peminjaman Sepeda ITS
           <form:form action="user-check" method="post" modelAttribute="user">
             <div class="form-group">
-              	<form:input class="form-control" type="email" path="userEmail"/>
-          		<form:label path="userEmail">Email</form:label>        
+            	<form:label path="userEmail">Email</form:label>
+              	<form:input class="form-control" type="email" placeholder="Enter Email" path="userEmail"/>        
             </div>
             <div class="form-group">
-              	<form:input class="form-control" type="password" path="userPassword"/>
-          		<form:label path="userPassword">Password</form:label>          		
+            	<form:label path="userPassword" >Password</form:label> 
+              	<form:input class="form-control" type="password" placeholder="Enter Password" path="userPassword"/>
             </div>
             <button type="submit" class="btn btn-success" style="margin: 10px">Login</button>
           </form:form>
           
-		<!-- <form:form method="POST" action="user-check" modelAttribute="user">
-		  	<div class="row" style="margin-bottom:0;">
-				<div class="input-field col s12">
-					<form:input type="email" path="userEmail"/>
-          			<form:label path="userEmail">Email</form:label>          								
-				</div>
-				<div class="input-field col s12">
-					<form:input type="password" path="userPassword"/>
-          			<form:label path="userPassword">Password</form:label>          								
-				</div>
-				<div class="input-field col s12 center">
-					<button class="btn purple waves-effect waves-light" type="submit">Login
-						<i class="material-icons right">send</i>
-					</button>
-				</div>
-				<div class="input-field col s12 center">
-					<span>Don't have an account? <a href="register" class="purple-text">Register here</a></span>
-				</div>
-								</div>
-		</form:form> -->
         </div>
 
         <div class="col-12 forgot ">
           <a href="#" data-toggle="modal" data-target="#penggunabaru">Belum Punya Akun?</a>
           <strong>|</strong>
-          <a type="" href="dashboard"> ADMIN SITE </a>
+          <a type="" href="loginPetugas"> ADMIN SITE </a>
         </div>
 
       </div>

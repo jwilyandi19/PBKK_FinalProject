@@ -37,6 +37,20 @@ public class HomeController {
 		
 		return "index";
 	}
+	
+	@GetMapping("/admin")
+	public String loginPageAdmin(Model model, HttpSession httpSession) {
+		User user = (User) httpSession.getAttribute("user");
+		//jika ada session user, maka redirect ke dashboard user
+		if(user!=null) {
+			return "redirect:/user-home";
+		}
+		model.addAttribute("user", new User());
+		
+		return "index";
+	}
+	
+	
 
 	
 	/*
