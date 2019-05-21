@@ -59,16 +59,11 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th style="max-width: 10px; min-width: 10px">No</th>
-                      <th style="max-width: 50px; min-width: 50px">NRP</th>
+                      <th style="max-width: 10px; min-width: 10px">ID</th>
                       <th style="max-width: 80px; min-width: 80px">Nama</th>
+                      <th style="max-width: 80px; min-width: 80px">Email</th>
                       <th style="max-width: 80px; min-width: 80px">No. HP</th>
-                      <th style="max-width: 200px ; min-width: 200px">Alamat Surabaya</th>
-                      <th style="max-width: 70px; min-width: 70px">Departemen</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                 
+                 	</tr>
                   <!-- <tbody>
                   
                     <tr>
@@ -101,6 +96,20 @@
       
                    
                   </tbody> -->
+                  <tbody>
+							<c:forEach var="user" items="${users}">
+								<c:url var="editLink" value="/user-edit">
+						  			<c:param name="id" value="${user.userId}"/>
+						  		</c:url>
+								<tr>
+							      <td><c:out value="${user.userId}"/></td>
+							      <td><c:out value="${user.userNama}"/></td>
+							      <td><c:out value="${user.userEmail}"/></td>
+							      <td><c:out value="${user.userHp}"/></td>
+							     
+							    </tr>
+							</c:forEach>
+						  </tbody>
                 </table>
               </div>
             </div>

@@ -18,7 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 public class PetugasController {
 	
-	
+	@Autowired
+	private IUserService userService;
 	
 	@GetMapping("/loginPetugas")
 	public String loginPetugas()
@@ -45,9 +46,11 @@ public class PetugasController {
 		return "dashboard";
 	}
 	
+	
 	@GetMapping("/manageuser")
-	public String manageuser()
+	public String manageuser(Model model)
 	{
+		model.addAttribute("users", userService.getUsers());
 		return "manage-user";
 	}
 	
