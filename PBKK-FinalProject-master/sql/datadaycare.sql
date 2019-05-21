@@ -120,14 +120,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `user_nama`, `user_email`, `user_password`, `user_hp`) VALUES
-(1, 'Irman Kurniawan', 'irman@gmail.com', 'qwerty123', '085739806320'),
-(2, 'Tes Kurniawan', 'tes16@mhs.if.its.ac.id', '3fc0a7acf087f549ac2b266baf94b8b1', '085085085085'),
-(3, 'Alicya Fitri', 'alicya@gmail.com', 'qwerty123', '085123456111'),
-(4, 'Wawan', 'wawan@gmail.com', 'qwerty123', '085111222333'),
-(6, 'Nurul Musthofa', 'nurul@gmail.com', 'qwerty123', '085000000000'),
-(7, 'Sogol Sumarmono', 'sogol@gmail.com', 'qwerty123', '085085085085'),
-(10, 'Klintu Ramadhan', 'klintu@gmail.com', 'qwerty123', '081543211234'),
-(11, 'Diana Zurreta', 'diana@gmail.com', 'qwerty123', '087712341234');
+(1, 'test', 'test@gmail.com', 'qwerty123', '085000000000'),
+(2, 'Rafi', 'a@a.com', '123', '085085085085'),
+(3, 'Klintu Ramadhan', 'klintu@gmail.com', 'qwerty123', '081543211234'),
+(4, 'Diana Zurreta', 'diana@gmail.com', 'qwerty123', '087712341234');
 
 --
 -- Indexes for dumped tables

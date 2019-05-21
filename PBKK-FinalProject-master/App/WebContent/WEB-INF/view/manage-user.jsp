@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+  
 <html lang="en">
 
 <head>
@@ -49,8 +50,9 @@
               <h6 class="m-0 font-weight-bold text-primary">Data Pengguna</h6>
             </div>
             <div class="card-body">
-               <button type="button" class="btn-sm btn-primary" style="float: right; margin-bottom: 5px" align="right" data-toggle="modal" data-target="#adduser"><i class="fas fa-user-plus"></i> TAMBAH USER</button>
-                
+         	
+     		<a href="register" type="button" class="btn-sm btn-primary" style="float: right; margin-bottom: 5px" align="right" ><i class="fas fa-user-plus"></i> TAMBAH USER</button>> 	
+            </a>    
 
 
               <div class="table-responsive small">
@@ -67,7 +69,7 @@
                     </tr>
                   </thead>
                  
-                  <tbody>
+                  <!-- <tbody>
                   
                     <tr>
                       <td>1</td>
@@ -98,7 +100,7 @@
                    
       
                    
-                  </tbody>
+                  </tbody> -->
                 </table>
               </div>
             </div>
@@ -129,92 +131,22 @@
 
   </div>
 
-  <!-- Bootstrap core JavaScript-->
-  
-</body>
-    <div class="modal fade" id="adduser" tabindex="-1" role="dialog"  aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h3>Tambah User</h3>
-              </div>
-              <div class="modal-body" style="padding-left: 40px">
-                   <form action="#" method="post" >     
-                      <div class="row form-group">
-                        <div class="col-3">
-                          <label class=""><strong >NRP</strong><span style="color: red">*</span></label>
-                        </div>
-                        <div class="col-8">
-                          <input type="text" name="" class="form-control" placeholder="Contoh : 0511164000xxxx">
-                        </div>
-                      </div>
-                      <div class="row form-group">
-                        <div class="col-3">
-                          <label class=""><strong >NAMA</strong><span style="color: red">*</span></label>
-                        </div>
-                        <div class="col-8">
-                          <input type="text" name="" class="form-control" placeholder="Nama Pengguna">
-                        </div>  
-                      </div>      
-                      <div class="row form-group">
-                        <div class="col-3">
-                          <label class=""><strong >No. HP</strong><span style="color: red">*</span></label>
-                        </div>
-                        <div class="col-8">
-                          <input type="text" name="" class="form-control" placeholder="Contoh : 0877xxxxxxxx">
-                        </div>
-                      </div> 
-                      <div class="row form-group">
-                        <div class="col-3">
-                          <label class=""><strong >Alamat Surabaya</strong><span style="color: red">*</span></label>
-                        </div>
-                        <div class="col-8">
-                          <input type="text" name="" class="form-control">
-                        </div>
-                      </div>
-                      <div class="row form-group">
-                        <div class="col-3">
-                          <label class=""><strong >Departemen</strong><span style="color: red">*</span></label>
-                        </div>
-                        <div class="col-8">
-                          <select class="form-control">
-                          <option selected disabled >Choose..</option>
-                          <option>Informatika</option>
-                          <option>Sistem Informasi</option>
-                          <option>Fisika</option>
-                        </select>                          
-                        </div>
-                      
-                      </div>                     
-
-                        <div style="text-align: right; margin:10px ; margin-right: 40px">
-                        
-                        <button id="btnSubmit" type="submit" class="btn btn-primary btn-hero " name="btnSubmit" ><span class="fa fa-plus-circle" aria-hidden="true"></span>  KIRIM</button>
-                        </div>
-
-                    </form>
-                  </div>
-              </div>
-             
-            </div>
-          </div>
-        </div>
 
 
-          <div class="modal fade" id="edituser" tabindex="-1" role="dialog"  aria-hidden="true">
+          <!-- <div class="modal fade" id="edituser" tabindex="-1" role="dialog"  aria-hidden="true"> -->
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
                 <h3>Ubah Data User</h3>
               </div>
               <div class="modal-body" style="padding-left: 40px">
-                   <form action="#" method="post" >     
+                   <form:form action="#" method="post" >     
                       <div class="row form-group">
                         <div class="col-3">
                           <label class=""><strong >NRP</strong><span style="color: red">*</span></label>
                         </div>
                         <div class="col-8">
-                          <input type="text" name="" class="form-control" placeholder="Contoh : 0511164000xxxx">
+                          <form:input cssClass="form-control" placeholder="Contoh : 0511164000xxxx" path="userNama"/>
                         </div>
                       </div>
                       <div class="row form-group">
@@ -261,7 +193,7 @@
                         <button id="btnSubmit" type="submit" class="btn btn-primary btn-hero " name="btnSubmit" ><span class="fa fa-plus-circle" aria-hidden="true"></span>  KIRIM</button>
                         </div>
 
-                    </form>
+                    </form:form>
                   </div>
               </div>
              
@@ -269,7 +201,7 @@
           </div>
         </div>
 
-        <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -285,7 +217,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 <footer>
   <%@ include file="footer.jsp" %> 
 </footer>

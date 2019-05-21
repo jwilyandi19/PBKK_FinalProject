@@ -97,7 +97,7 @@
 
           <h3>SELAMAT DATANG DI <strong>ITS-CYCLE</strong></h3>
           <p>Sistem Informasi Peminjaman Sepeda ITS
-<%--      <form:form action="user-check" method="post" modelAttribute="user" >
+          <form:form action="user-check" method="post" modelAttribute="user">
             <div class="form-group">
             	<form:label path="userEmail">Email</form:label>
               	<form:input class="form-control" type="email" placeholder="Enter Email" path="userEmail"/>        
@@ -108,7 +108,7 @@
             </div>
             <button type="submit" class="btn btn-success" style="margin: 10px">Login</button>
           </form:form>
-           --%>
+          
         </div>
 
         <div class="col-12 forgot ">
