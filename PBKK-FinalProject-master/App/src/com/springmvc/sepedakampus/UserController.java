@@ -13,9 +13,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.springmvc.sepedakampus.model.User;
 import com.springmvc.sepedakampus.service.IUserService;
 
+import java.util.List;
+
+import com.springmvc.sepedakampus.dao.PosDAO;
+import com.springmvc.sepedakampus.model.Pos;
+
 @Controller
 public class UserController {
-	
+	@Autowired
+	private PosDAO posDAO;
 	@Autowired
 	private IUserService userService;
 	
@@ -48,6 +54,8 @@ public class UserController {
 			
 			return "redirect:/";
 		}
+		List <Pos> thePoss = posDAO.getPoss();
+		model.addAttribute("poss", thePoss);
 		model.addAttribute("user", user);
 		return "homepage";
 	}
