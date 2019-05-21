@@ -198,8 +198,8 @@
 	                                                            <div class="single_info_text">
 	                                                              
 	                                                             
-	                                                               <%--  <h3>${pos.lokasi}</h3>
-	                                                                <p>Ketersediaan Sepeda: ${pos.jumlahSepeda}</p> --%>
+	                                                               <h3>${pos.lokasi}</h3>
+	                                                                <p>Ketersediaan Sepeda: ${pos.jumlah}</p> 
 	                                                            </div>
 	                                                        </div>
 	                                                    </div>

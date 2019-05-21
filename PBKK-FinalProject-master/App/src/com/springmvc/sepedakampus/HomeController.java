@@ -14,6 +14,7 @@ import com.springmvc.sepedakampus.service.IUserService;
 
 @Controller
 public class HomeController {
+
 	
 	@Autowired
 	private IUserService userService;
