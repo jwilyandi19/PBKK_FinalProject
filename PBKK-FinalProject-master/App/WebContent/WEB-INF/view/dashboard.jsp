@@ -132,21 +132,28 @@
                     <tr>
                       <th style="max-width: 10px; min-width: 10px">POS</th>
                       <th style="max-width: 50px; min-width: 50px">STATUS</th>
-                      <th style="max-width: 20px; min-width: 20px">PETUGAS</th>
+                      
                       <th style="max-width: 80px; min-width: 80px">SEPEDA TERSEDIA</th>
                      
                     </tr>
                   </thead>
                  
                   <tbody>
-                  
-                    <tr>
+                  <c:forEach var="pos" items="${poss}">
+                       <tr>
+                      <td style="max-width: 10px; min-width: 10px">${pos.lokasi}</td>
+                      <td style="max-width: 50px; min-width: 50px">${pos.is_active}</td>
+              
+                      <td style="max-width: 80px; min-width: 80px">${pos.jumlah}</td>      
+                      </tr>            
+	             </c:forEach>
+                    <!-- <tr>
                       <td style="max-width: 10px; min-width: 10px">1 - Pintu Utama</td>
                       <td style="max-width: 50px; min-width: 50px">AKTIF</td>
                       <td style="max-width: 20px; min-width: 20px">Muhammad Arrafi</td>
                       <td style="max-width: 80px; min-width: 80px">10/25</td>
                       
-                    </tr>
+                    
                      <tr>
                       <td style="max-width: 10px; min-width: 10px">2 - Asrama</td>
                       <td style="max-width: 50px; min-width: 50px">AKTIF</td>
@@ -160,7 +167,7 @@
                       <td style="max-width: 20px; min-width: 20px">-</td>
                       <td style="max-width: 80px; min-width: 80px">15/25</td>
                       
-                    </tr>
+                    </tr> -->
                     
                    
       

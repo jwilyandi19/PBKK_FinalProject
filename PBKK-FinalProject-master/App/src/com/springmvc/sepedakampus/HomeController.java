@@ -51,6 +51,13 @@ public class HomeController {
 		return "index";
 	}
 	
+	@PostMapping("/form-peminjaman")
+	public String formpeminjaman(User user, HttpSession httpSession, Model model) {
+	
+		
+		return "formpeminjaman";
+	}
+	
 	
 	/*
 	 * @GetMapping("/register") public String showRegistrationPage(Model model,

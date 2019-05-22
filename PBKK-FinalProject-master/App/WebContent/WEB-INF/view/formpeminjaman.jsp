@@ -86,7 +86,7 @@ img{
           </div>
         </div>
           <p> Informasi Sepeda </p>
-          <form action="homepage" method="post">
+<!--           <form action="homepage"> -->
             <div class="form-group">
               <label>ID Sepeda</label>
               <input type="text" class="form-control"  value="SPD01" disabled>
@@ -101,9 +101,9 @@ img{
             </div>
 
 
-            <button type="submit" class="btn btn-primary" style="margin-bottom: 20px">PINJAM</button>
-          </form>
-          <a href="homepage">Kembali<<</a>
+            <a href="user-home" type="submit" class="btn btn-primary" style="margin-bottom: 20px">PINJAM</a>
+        <!--   </form> -->
+          <a href="user-home">Kembali</a>
         </div>
 
       </div>

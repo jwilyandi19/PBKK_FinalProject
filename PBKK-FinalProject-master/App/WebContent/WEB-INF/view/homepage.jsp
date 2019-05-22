@@ -234,7 +234,7 @@
                         
                         <!-- Modal body -->
                         <div class="modal-body" style="padding:1rem">
-                        <form action="formpeminjaman" method="post">
+                        <form action="form-peminjaman" method="post">
                            <label>ID SEPEDA</label>
                            <input class="form-control" type="text" name="id_sepeda">
                         </div>

@@ -1,4 +1,6 @@
 package com.springmvc.sepedakampus;
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,10 +16,13 @@ import com.springmvc.sepedakampus.service.IUserService;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
+import com.springmvc.sepedakampus.dao.PosDAO;
+import com.springmvc.sepedakampus.model.Pos;
 
+@Controller
 public class PetugasController {
-	
+	@Autowired
+	private PosDAO posDAO;
 	@Autowired
 	private IUserService userService;
 	
@@ -41,8 +46,10 @@ public class PetugasController {
 	}
 	
 	@GetMapping("/dashboard")
-	public String dashboard()
+	public String dashboard(Model model)
 	{
+		List <Pos> thePoss = posDAO.getPoss();
+		model.addAttribute("poss", thePoss);
 		return "dashboard";
 	}
 	
